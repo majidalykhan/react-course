@@ -22,7 +22,12 @@ function BookList() {
         img={firstBook.img}
         title={firstBook.title}
         author={firstBook.author}
-      />
+      >
+        {/*Content in the opening and closing tag of component is Props chidlren */}
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda,
+        asperiores!
+      </Book>
+
       <Book
         img={secondBook.img}
         title={secondBook.title}
@@ -32,13 +37,14 @@ function BookList() {
   );
 }
 
-const Book = ({ img, title, author }) => {
-  //const { img, title, author } = props;
+const Book = (props) => {
+  const { img, title, author, children } = props;
   return (
     <article className="book">
       <img src={img}></img>
       <h2>{title}</h2>
       <h3>{author}</h3>
+      {children}
     </article>
   );
 };
