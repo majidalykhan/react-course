@@ -1,40 +1,41 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { createRoot } from "react-dom/client";
 
 import "./index.css";
 
 const books = [
   {
+    id: 1,
     title: "Reminders of Him: A Novel",
     author: "Colleen Hoover",
     img: "https://images-na.ssl-images-amazon.com/images/I/41n9-p6-PpL._AC_SX184_.jpg",
   },
   {
+    id: 2,
     title: "It's Not Summer Without You",
     author: "Jenny Han",
     img: "https://images-na.ssl-images-amazon.com/images/I/51ky4TIb1bL._AC_SX184_.jpg",
   },
   {
+    id: 3,
     title: "The Lord Of The Rings",
     author: "J.R.R. Tolkien",
-    img:'https://images-na.ssl-images-amazon.com/images/I/51kfFS5-fnL._AC_SX184_.jpg',
+    img: "https://images-na.ssl-images-amazon.com/images/I/51kfFS5-fnL._AC_SX184_.jpg",
   },
-  
 ];
 
 function BookList() {
   return (
     <section className="booklist">
       {books.map((book) => {
-        const { img, title, author } = book;
-        return <Book book={book} />;
+        return <Book key={book.id} {...book} />;
       })}
     </section>
   );
 }
 
 const Book = (props) => {
-  const { img, title, author } = props.book;
+  const { img, title, author } = props;
   return (
     <article className="book">
       <img src={img}></img>
@@ -44,4 +45,6 @@ const Book = (props) => {
   );
 };
 
-ReactDOM.render(<BookList />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<BookList />);
