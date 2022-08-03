@@ -33,6 +33,10 @@ const Image = () => (
 
 const Title = () => <h2>Reminders of Him: A Novel</h2>;
 
-const Author = () => <h3>Colleen Hoover</h3>;
+const Author = () => (
+  <h3 style={{ color: "#5B7CEB", fontSize: "1rem", marginTop: "0.25rem" }}>
+    Colleen Hoover
+  </h3>
+);
 
 ReactDOM.render(<BookList />, document.getElementById("root"));
