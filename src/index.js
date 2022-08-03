@@ -7,36 +7,20 @@ function BookList() {
   return (
     <section className="booklist">
       <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
     </section>
   );
 }
 
 const Book = () => {
+  const title = "Reminders of Him: A Novel";
+  const author = "Colleen Hoover";
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src="https://images-na.ssl-images-amazon.com/images/I/41n9-p6-PpL._AC_SX184_.jpg"></img>
+      <h2>{title}</h2>
+      <h3>{author.toUpperCase()}</h3>
     </article>
   );
 };
-
-const Image = () => (
-  //This is an implicit return
-  <img src="https://images-na.ssl-images-amazon.com/images/I/41n9-p6-PpL._AC_SX184_.jpg"></img>
-);
-
-const Title = () => <h2>Reminders of Him: A Novel</h2>;
-
-const Author = () => (
-  <h3 style={{ color: "#5B7CEB", fontSize: "1rem", marginTop: "0.25rem" }}>
-    Colleen Hoover
-  </h3>
-);
 
 ReactDOM.render(<BookList />, document.getElementById("root"));

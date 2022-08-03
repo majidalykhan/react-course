@@ -34,3 +34,9 @@ body {
 .book h1 {
   padding-top: 0.5rem;
 }
+
+.book h3 {
+  color: #5b7ceb;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
