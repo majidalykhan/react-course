@@ -1,19 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-// JSX rules
-// return single element
-// div / section / article or Fragment
-// use camelCase for html attribute
-// close every element 
-// formatting
-
 function Hello() {
   return (
     <div>
-      <h1>This is first component</h1>
+      <Name />
+      <Message />
     </div>
   );
 }
+
+const Name = () => {
+  return <h1>Mak</h1>;
+};
+
+const Message = () => {
+  return <h3>Learning React</h3>;
+};
 
 ReactDOM.render(<Hello />, document.getElementById("root"));
