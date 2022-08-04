@@ -1,11 +1,11 @@
 import React from "react";
 
-import UseStateArray from "./1-useState/3-useState-array";
+import UseStateObject from "./1-useState/4-useState-object";
 
 function App() {
   return (
     <div className="container">
-      <UseStateArray />
+      <UseStateObject />
     </div>
   );
 }
