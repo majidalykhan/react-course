@@ -1,11 +1,11 @@
 import React from "react";
 
-import UseStateBasics from "./1-useState/2-useState-basics";
+import UseStateArray from "./1-useState/3-useState-array";
 
 function App() {
   return (
     <div className="container">
-      <UseStateBasics />
+      <UseStateArray />
     </div>
   );
 }
