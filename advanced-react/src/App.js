@@ -1,11 +1,11 @@
 import React from "react";
 
-import ShortCircuit from "./3-conditional-rendering/2-short-circuit";
+import ShowHide from "./3-conditional-rendering/3-show-hide";
 
 function App() {
   return (
     <div className="container">
-      <ShortCircuit />
+      <ShowHide />
     </div>
   );
 }
