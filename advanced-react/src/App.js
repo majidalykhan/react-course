@@ -1,11 +1,11 @@
 import React from "react";
 
-import ShowHide from "./3-conditional-rendering/3-show-hide";
+import ControlledInputs from "./4-forms/1-controlled-inputs";
 
 function App() {
   return (
     <div className="container">
-      <ShowHide />
+      <ControlledInputs />
     </div>
   );
 }
