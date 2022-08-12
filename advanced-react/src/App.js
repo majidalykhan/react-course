@@ -1,11 +1,11 @@
 import React from "react";
 
-import MultipleInputs from "./4-forms/2-multiple-inputs";
+import UseRefBasics from "./5-useRef/1-useRef-basics";
 
 function App() {
   return (
     <div className="container">
-      <MultipleInputs />
+      <UseRefBasics />
     </div>
   );
 }
