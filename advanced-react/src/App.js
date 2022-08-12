@@ -1,11 +1,11 @@
 import React from "react";
 
-import ControlledInputs from "./4-forms/1-controlled-inputs";
+import MultipleInputs from "./4-forms/2-multiple-inputs";
 
 function App() {
   return (
     <div className="container">
-      <ControlledInputs />
+      <MultipleInputs />
     </div>
   );
 }
