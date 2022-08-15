@@ -1,11 +1,11 @@
 import React from "react";
 
-import UseRefBasics from "./5-useRef/1-useRef-basics";
+import UseReducer from "./6-useReducer/1-use-reducer";
 
 function App() {
   return (
     <div className="container">
-      <UseRefBasics />
+      <UseReducer />
     </div>
   );
 }
