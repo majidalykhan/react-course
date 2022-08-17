@@ -1,11 +1,11 @@
 import React from "react";
 
-import UseReducer from "./6-useReducer/1-use-reducer";
+import PropDrilling from "./7-prop-drilling/prop-drilling";
 
 function App() {
   return (
     <div className="container">
-      <UseReducer />
+      <PropDrilling />
     </div>
   );
 }
