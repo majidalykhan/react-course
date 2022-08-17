@@ -1,11 +1,11 @@
 import React from "react";
 
-import ContextAPI from "./8-useContext/use-context";
+import UseFetch from "./9-custom-hooks/use-fetch-example";
 
 function App() {
   return (
     <div className="container">
-      <ContextAPI />
+      <UseFetch />
     </div>
   );
 }
