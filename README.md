@@ -1,4 +1,4 @@
-# React Course
+# React Hands-on experience
 
 <p>Learned the basics, fundamentals, hooks, context API, react router, custom hooks and more in this comprehensive course.
 
